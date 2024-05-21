@@ -1,0 +1,123 @@
+.container { 
+   font-size: 30px;
+   display: flex; 
+   
+   flex-direction: column; 
+ 
+   height: 100vh; 
+ 
+   border: 2px solid rgb(26, 25, 27); 
+ 
+   box-sizing: border-box; /* Inclui bordas no cálculo de largura/altura */ 
+ 
+ } 
+ 
+  
+ 
+ .header, .footer, .hero, .content, .sidebar { 
+ 
+   margin: 5px; /* Margens padronizadas */ 
+ 
+   box-sizing: border-box; /* Inclui margens no cálculo de largura/altura */ 
+ 
+ } 
+ 
+  
+ 
+ .header, .footer { 
+ 
+   flex: 0 1 15%; /* Flex-grow: 0, Flex-shrink: 1, Flex-basis: 15% */ 
+ 
+   width: calc(100% - 10px); /* Ajuste da largura considerando as margens */ 
+ 
+ } 
+ 
+  
+ 
+ .hero { 
+ 
+   flex: 0 1 20%; /* Flex-grow: 0, Flex-shrink: 1, Flex-basis: 20% */ 
+ 
+   width: calc(100% - 10px); /* Ajuste da largura considerando as margens */ 
+ 
+ } 
+ 
+  
+ 
+ .content-sidebar { 
+ 
+   display: flex; 
+ 
+   flex: 1; /* Flexível para ocupar o restante do espaço */ 
+ 
+   width: 100%; 
+ 
+ } 
+ 
+  
+ 
+  
+ 
+   
+ 
+   
+ 
+    
+ 
+    
+ 
+   
+ 
+  
+ 
+     
+ 
+  
+ 
+    
+ 
+  
+ 
+ .content { 
+ 
+   flex: 3; /* Flex-grow: 3 para ocupar 60% */ 
+ 
+   background-color: green; 
+ 
+ } 
+ 
+  
+ 
+ .sidebar { 
+ 
+   flex: 2; /* Flex-grow: 2 para ocupar 40% */ 
+ 
+   background-color: navy; 
+ 
+ } 
+ 
+  
+ 
+ .header { 
+ 
+   background-color: blue; 
+ 
+ } 
+ 
+  
+ 
+ .hero { 
+ 
+   background-color: red; 
+ 
+ } 
+ 
+  
+ 
+ .footer { 
+ 
+   background-color: gray; 
+ 
+ } 
+ 
+  
